@@ -36,3 +36,37 @@ Here is the result
 
 Now we are going to write a text in the clip prompt injection of output 8.
 
+![Screenshot 2024-06-13 at 3 27 31 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/b43eb923-ab8f-481f-bc66-968d4cb424ea)
+
+Now we are going to take the same prompt and use it as usual and unlink the prompt injection. 
+
+Here is the result 
+
+![Screenshot 2024-06-13 at 4 58 33 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/f432e798-6cb0-4ee0-8778-af96ead9d36f)
+
+As you can see, all the colour and tone is linked to the first reference images of the landscape we see before. As you can see, this time the building has disappeared. What does this mean? The first image reference can be considered as the general ambiance (colour, luminosity ....) and the third image would affect the theme depending on what you wrote in a prompt, this case is less striking than the image in part one. We can assume that it is a mixture of noise reference 1 and noise reference 2 You are not convinced? Let us try the reverse process with Clip Vision 
+
+Clip Vision help to use an image instead of a prompt to render a batch of images 
+
+We are going to use the last image with the same seed 
+
+![workflow-8](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/7ecb84ee-19ee-4a99-9bfc-1067ac7cb7d6)
+
+We first use 1 for the strength of the unClipConditioning and then 0. 1 is refering to second image et 0 to first image 
+
+![Screenshot 2024-06-13 at 6 33 58 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/dd968c4d-52d5-4bc4-b86c-27610bfb4d76) ![Screenshot 2024-06-13 at 6 33 52 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/dbc99b73-e0e1-4741-8de3-acfa6721f5bc)
+
+As you can see, we see the same perspective and building from both parts.
+
+For 0 we have the same image as before 
+
+![Screenshot 2024-06-13 at 6 36 33 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/1a388b69-14dc-427a-808f-fe4ce254b7a8)
+
+Your are still not convince ? Here is another, image used in part 1 
+
+
+
+
+
+What does this mean? It means that depending on what you want to build, it may be good to randomise images using Zeroconditioning and PromptInjection to decide which image to start with. This is why the seed is important, it determines which image we will use and use it as a reference. 
+
