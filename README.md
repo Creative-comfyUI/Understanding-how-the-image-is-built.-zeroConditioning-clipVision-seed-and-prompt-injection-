@@ -62,7 +62,7 @@ For 0 we have the same image as before
 
 ![Screenshot 2024-06-13 at 6 36 33 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/1a388b69-14dc-427a-808f-fe4ce254b7a8)
 
-Your are still not convince ? Here is another, image used in part 1 
+Your are still not convince ? Here is another, image used in part 1. If the image doesn't look sharp, it's because I didn't use the sampler suggested for this model. This point is very important and made a big difference to the result. 
 
 ![ImageComparaison](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/93646d4b-6373-4492-8a2f-08597d8a9925)
 
@@ -78,8 +78,25 @@ With the same seed let us try different sampler using clipvision
 
 ![Screenshot 2024-06-13 at 11 08 17 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/57aa99ac-357c-4869-9e48-6c46cd4dd3d6)  ![Screenshot 2024-06-13 at 11 04 58 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/45f7d2b0-1880-4dc0-9bb0-49ac673ac303)
 
-
 Different samplers don't change the image. it plays on detail. The seeds preserve the image
+
+Now randomise the seeds and see what happens for strength 0, 0.5 1 for the same seed 
+
+![Screenshot 2024-06-13 at 11 49 50 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/f6f3caed-f162-42dd-a630-b79c8d051215) ![Screenshot 2024-06-13 at 11 47 18 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/d163eadc-7e69-4b9d-868b-7d0728459656) ![Screenshot 2024-06-13 at 11 42 54 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/e3c96c43-32b1-4347-b281-8dd9aa35d322)
+
+Theses images can let us figure out what can be the base image. Let us retrieve the base image 
+
+This time we will go back to our original work, use the new seed with zeroconditioning and prompt injection output 8 and see what happens. 
+
+![Screenshot 2024-06-13 at 11 53 27 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/b98a7fa7-ec4e-4e17-affb-8d7e18353e64) 
+
+As you can see we retrieve the image that we have with clipvision. This time the 2 images reference is quiet the same. 
+
+Now we know that the image we create is the result of two random images. The question is why two images, and how is it that the second has more influence than the first? 
+
+Prompt injection can be a key changer, giving us better control over the final image and designing what is more important or dominant. 
+
+
 
 
 
