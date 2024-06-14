@@ -64,9 +64,22 @@ For 0 we have the same image as before
 
 Your are still not convince ? Here is another, image used in part 1 
 
+![ImageComparaison](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/93646d4b-6373-4492-8a2f-08597d8a9925)
 
+The original base image 
 
-
+![Screenshot 2024-06-13 at 7 17 51 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/1a74b716-3662-428f-856e-7f78cf13eff0)  ![Screenshot 2024-06-13 at 7 17 59 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/9f68aef3-0e9d-473e-8cb7-3f113bbb0d2b)
 
 What does this mean? It means that depending on what you want to build, it may be good to randomise images using Zeroconditioning and PromptInjection to decide which image to start with. This is why the seed is important, it determines which image we will use and use it as a reference. 
+
+But it is not always as easy as we thought. Let us try to make changes and see what happens. 
+
+With the same seed let us try different sampler using clipvision 
+
+![Screenshot 2024-06-13 at 11 08 17 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/57aa99ac-357c-4869-9e48-6c46cd4dd3d6)  ![Screenshot 2024-06-13 at 11 04 58 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/45f7d2b0-1880-4dc0-9bb0-49ac673ac303)
+
+
+Different samplers don't change the image. it plays on detail. The seeds preserve the image
+
+
 
