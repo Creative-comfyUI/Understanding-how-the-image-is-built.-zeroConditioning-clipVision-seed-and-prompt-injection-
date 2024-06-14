@@ -108,6 +108,16 @@ Let try the SDXL Turbo of Stability AI. This time we have an image, a single ima
 
 Does this mean that the models we have don't follow the rules defined by Stability AI?   Let us try other models and see what happens 
 
+DreamshaperXL Turbo has also two images reference but the differences is less important 
+
+
+Trying different model show me that the model with few setps I used is different from other models and explain this differences. 
+
+
+Let see what we have with clipvision and sdxl base model 
+
+
+
 
 
 Prompt injection can be a key changer, giving us better control over the final image and designing what is more important or dominant. Without input 8, middle and output will be applied on the first reference. 
