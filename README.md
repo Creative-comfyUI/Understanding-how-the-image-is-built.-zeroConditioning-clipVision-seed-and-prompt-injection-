@@ -15,9 +15,25 @@ The most intriguing is that the sampler can give a different image. Many users t
 
 ![Sampler](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/62accb8d-e2e4-49f3-b6c2-31066a05e182)
 
-There is another surprise the format can change the reference image to 
+There is another surprise the format can change the reference image too 
 
 ![Size](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/dbfa819e-6cff-4ea2-9521-9554b758c4ca)
+
+Now let us use prompt injection to see what has happened. As I mentioned in my previous repository, output 8 is the key change of the image. Not for the first image, but for the third more than the second. Output 8 with an empty prompt affected the result. The most defined reference image will show the more important change. Example with Sdxl 1 the change is slight.  Let us look at some examples. 
+
+This example is with sdxl_ligthning_8step model 
+
+![Screenshot 2024-06-16 at 2 38 21 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/675859cc-039f-4901-837b-434a8feddae0)
+
+If we change the size to 832 * 1216  the third image is completly different 
+
+![Screenshot 2024-06-16 at 2 45 07 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/73b2d6c1-eead-42df-9c25-975a18ba0b9a)
+
+Before continuing let write a prompt and mute the negative prompt to see what is the result for each model without prompt injection 
+
+
+
+
 
 
 
