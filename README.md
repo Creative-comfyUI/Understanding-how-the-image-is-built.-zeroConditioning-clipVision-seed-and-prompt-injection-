@@ -25,11 +25,13 @@ This example is with sdxl_ligthning_8step model
 
 ![Screenshot 2024-06-16 at 2 38 21 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/675859cc-039f-4901-837b-434a8feddae0)
 
-If we change the size to 832 * 1216  the third image is completly different 
+If we change the size to 832 * 1216 the third image is completely different, which is not the case when using Euler. This output 8 change the image 
 
 ![Screenshot 2024-06-16 at 2 45 07 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/73b2d6c1-eead-42df-9c25-975a18ba0b9a)
 
-Before continuing let write a prompt and mute the negative prompt to see what is the result for each model without prompt injection 
+Before continuing, write a prompt and mute the negative prompt to see what the result is for each model without prompt injection. 
+
+Prompt : Paris champ de mars, an elegant woman colorfull, in 1950 style
 
 
 
