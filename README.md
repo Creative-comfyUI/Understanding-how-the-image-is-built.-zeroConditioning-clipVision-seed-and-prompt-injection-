@@ -69,8 +69,7 @@ Now I will go to the muted prompt and write the prompt in the one that links to 
 
 ![Screenshot 2024-06-16 at 10 58 17 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/13363592-3f64-4a93-897d-0efebea52597)
 
-This means that the apply prompt in output 8 doesn't create an image, but gives a variation of the image reference, because images 2 and 3 are different. Output 8 will create a variation no matter what you write. This means that if you have a good reference image you can use it to make a variation using input 8 and output 0 and 1 and using batch size 3, depending on the model and latent size the variation may be less important and less or more interesting.  
-
+This means that the apply prompt in input 8 doesn't create an image, but gives a variation of the image reference, because images 2 and 3 are different. Input 8 will create a variation no matter what you write. This means that if you have a good reference image you can use it to make a variation using input 8  and using batch size 3, depending on the model and latent size the variation may be less important and less or more interesting. Output 0 and 1 will help to add detail to these variations. Let us take a look at the previous examples using the DreamshaperXL mode and the LCM sampler. 
 
 
 
