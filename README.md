@@ -37,11 +37,27 @@ Prompt : Paris champ de mars, an elegant woman colorfull, in 1950 style
 
 Now let try If as previously sampler change the image. I am going the same model and the same sampler and see the results 
 
+![Sampler_Prompt](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/b57a2672-eef1-4469-8ef7-aceb2f0efc30)
 
 The results obtained with different samplers show us that the image is in relation to the reference image style (realistic, drawin, sketching...) but it is not always the case 
 
-All this image is 1024 * 1024 format that means with another the result will be different 
+All these images are in 1024 * 1024 format, which means that with another the result will be different. 
 
+w 832 * h 1216 
+
+![Screenshot 2024-06-16 at 7 18 29 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/09ce416b-0b76-4a12-a8a1-c9a1333e8322)
+
+w 1536 * 640 
+
+![Screenshot 2024-06-16 at 7 43 30 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/3ba7bfa5-c599-47af-9eb7-57e5714d0485)
+
+Times to times with bigger images we can see a signature on the image or text as with this image without being able to read it. 
+
+What is commun with all these images ? 
+
+The Eiffel Tower, because it is associated with the Champ de Mars in Paris, cars, an elegant lady in a hat and, finally, nice colours. 
+
+Before continuing the explanation, we can conclude that Euler samplers always give the same images. Other samplers may give different images or style. The image following the first image can be different from the others with samplers other than Euler. The first picture is a kind of reference. The seed is linked to this image. Changing the size of the image changes the point of view and can change the image. It looks like the image is related to the deep field of the camera. 1526 * 640 can be considered as f22. 
 
 
 
