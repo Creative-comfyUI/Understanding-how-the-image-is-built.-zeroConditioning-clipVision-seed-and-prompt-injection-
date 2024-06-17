@@ -69,7 +69,29 @@ Now I will go to the muted prompt and write the prompt in the one that links to 
 
 ![Screenshot 2024-06-16 at 10 58 17 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/13363592-3f64-4a93-897d-0efebea52597)
 
-This means that the apply prompt in input 8 doesn't create an image, but gives a variation of the image reference, because images 2 and 3 are different. Input 8 will create a variation no matter what you write. This means that if you have a good reference image you can use it to make a variation using input 8  and using batch size 3, depending on the model and latent size the variation may be less important and less or more interesting. Output 0 and 1 will help to add detail to these variations. Let us take a look at the previous examples using the DreamshaperXL mode and the LCM sampler. 
+This means that the apply prompt in input 8 doesn't create an image, but gives a variation of the image reference, because images 2 and 3 are different. Input 8 will create a variation no matter what you write. This means that if you have a good reference image you can use it to make a variation using input 8  and using batch size 3, depending on the model and latent size the variation may be less important and less or more interesting. Output 0 and 1 will help to add detail to these variations. Let us take a look at the previous examples using the DreamshaperXL mode and the LCM sampler. I use zeron conditionning for the prompt and the input 8 prompt is blank here is the result 
+
+![LCM input_8](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/488c4ac4-0809-4ffb-833e-228aa1e470bc)
+
+Now are going to add details to image 2 and 3 using different input and ouput 
+
+input 5 and input 8 with blank prompt change face expression of the third image 
+
+![visage](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/ed8edfa3-2ea5-4117-8bb9-5c057a9a1d36)
+
+input 7  and input 8 with blank prompt change much more face expression of the third image 
+
+![visage2](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/ef3d2c02-52a1-4c18-bd99-1f14b8f6f460)
+
+
+
+The question is: is there a relationship between the reference image and the final image, or is it a glitch ?  
+
+![ref-image](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/95a46605-c62c-48c0-8a22-9c1c89a8a604)
+
+
+
+
 
 
 
