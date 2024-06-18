@@ -91,13 +91,16 @@ input 1 : Red jacket, blue trouser, yellow hat,
 ![Screenshot 2024-06-17 at 8 23 33 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/7e7167c1-7a46-4484-a0d0-58231cb79ee0)
 
 Now I will link all to a prompt in prompt injection. The prompt is the one in front of Paris champ de mars, an elegant woman colourful, in 1950 style
-This prompt changes the second image, but the prompt was not applied. The prompt will be applied if we unlink input 8 but the result will be different when we use the prompt as usual.
+This prompt changes the second image, but the prompt was not applied. If we disconnect input 8 and keep all outputs 1 and 0, then not only the third image but also the second one will be affected. 
+This time the output prompt 0 and 1 are correctly applied, but it is not the prompt we expected.
 
-![Screenshot 2024-06-17 at 8 42 13 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/4e6cf9d0-8249-47fe-a7a5-574f26500d34)
+![Screenshot 2024-06-17 at 8 42 13 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/4e6cf9d0-8249-47fe-a7a5-574f26500d34) ![Screenshot 2024-06-17 at 10 09 27 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/5a9a373a-c3c3-40e4-8319-c0d8b7612ea6)
 
-If we now change the Lcm sampler for dpmpp_2m, the result is different. The second image is the metamorphosis of the reference image and the third image is the final transformation. 
+If we now change the Lcm sampler for dpmpp_2m with input 8, the result is different. The second image is the metamorphosis of the reference image and the third image is the final transformation. 
 
 ![Screenshot 2024-06-17 at 9 25 10 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/fd6106ab-def8-4c7a-9c4c-4ecc424b042c)
+
+If we unlink input 8 and link 
 
 using output 0 or output 1 don't need to link input 8. 
 
