@@ -104,11 +104,12 @@ Now we applied the current prompt and prompt injection all, output 0 and output 
 
 ![Screenshot 2024-06-17 at 10 23 57 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/22203c2c-91f5-4173-9ad5-e011486c2ad9) ![Screenshot 2024-06-17 at 9 57 39 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/573ab13b-4124-4e08-90b1-9d10963dad0e) ![Screenshot 2024-06-17 at 10 42 38 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/9b9b2a50-f151-4754-bd94-7d01b1fefd7f)
 
+Prompt injection bring precision and detail to the image. Adding input 8 blocked a part of the original prompt 
 
+![Screenshot 2024-06-17 at 11 03 25 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/1080f954-1d40-4ac1-93d0-afc7f2ef3c56)
 
+The question is: is there a relationship between the reference image and the final image, or is it a glitch ? Is the reference image, an AI image or an existing image that was used to train the AI? 
 
-The question is: is there a relationship between the reference image and the final image, or is it a glitch ? Is the reference image an AI image or an existing image that was used to train the AI? 
-Prompt injection bring precision and detail to the image.
 
 Let tryied to use this image as a latent with 
 
