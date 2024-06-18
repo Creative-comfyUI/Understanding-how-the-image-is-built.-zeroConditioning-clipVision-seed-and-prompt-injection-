@@ -147,6 +147,11 @@ Now we are going to use another model and show something much more accurate.
 
 
 
+For a same seed, with the same model, the reference image will be always the same. Using clip vision with this model and and image done with another model will give the same reference image but with variation. The sampler can impact the reference image Euler, LCM  dpmmpp_....  or dpmpp_sde can different references. 
+
+Prompt injection can help us to add some detail more precisely wiht output 8.  output 8 can in some cas as seen with my previous repisotery on prompt injecction help us to have variation of image reference and can give interesting result. In that case the choice of the model is very important. All models doesn't react the same way
+
+Now how this referecne is used, how it have an impact on the result ? Why is some model the impact is important and other not ?  Can I place of linking model in ksampler car we linked an image an using a reference ?
 
 
 
