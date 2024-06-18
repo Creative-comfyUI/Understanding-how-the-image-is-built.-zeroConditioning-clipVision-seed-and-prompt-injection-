@@ -108,10 +108,13 @@ Prompt injection bring precision and detail to the image. Adding input 8 blocked
 
 ![Screenshot 2024-06-17 at 11 03 25 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/1080f954-1d40-4ac1-93d0-afc7f2ef3c56)
 
+Two points: Using an image for latent_image instead of empty latent changes the posture of the character. Using batch size can give a different result than if we choose batch size 3. 
+
 The question is: is there a relationship between the reference image and the final image, or is it a glitch ? Is the reference image, an AI image or an existing image that was used to train the AI? 
 
+There is a relationship between the reference image with the seed for sure. That means there is a relationship also with the image we will create especially with the first image 
 
-Let tryied to use this image as a latent with 
+Now let use clip vision to confirm or not this relationship. Clipvision let us used an image as prompt. Using this technic can help us to mix two images and create a new one. Let try and see what happend. We are going one of the image we used with the same seed. 
 
 
 
