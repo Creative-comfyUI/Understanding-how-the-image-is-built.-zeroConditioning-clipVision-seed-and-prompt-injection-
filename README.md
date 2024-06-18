@@ -100,16 +100,18 @@ If we now change the Lcm sampler for dpmpp_2m with input 8, the result is differ
 
 ![Screenshot 2024-06-17 at 9 25 10 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/fd6106ab-def8-4c7a-9c4c-4ecc424b042c)
 
-If we unlink input 8 and link 
+Now we applied the current prompt and prompt injection all, output 0 and output 1 applied, without injection all and without injection all and dpmmp_sde sampler instead Lcm 
 
-using output 0 or output 1 don't need to link input 8. 
+![Screenshot 2024-06-17 at 10 23 57 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/22203c2c-91f5-4173-9ad5-e011486c2ad9) ![Screenshot 2024-06-17 at 9 57 39 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/573ab13b-4124-4e08-90b1-9d10963dad0e) ![Screenshot 2024-06-17 at 10 42 38 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/9b9b2a50-f151-4754-bd94-7d01b1fefd7f)
 
 
 
 
 The question is: is there a relationship between the reference image and the final image, or is it a glitch ? Is the reference image an AI image or an existing image that was used to train the AI? 
+Prompt injection bring precision and detail to the image.
 
-![ref-image](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/95a46605-c62c-48c0-8a22-9c1c89a8a604)
+Let tryied to use this image as a latent with 
+
 
 
 
