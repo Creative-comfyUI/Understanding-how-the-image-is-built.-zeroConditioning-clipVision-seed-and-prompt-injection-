@@ -91,14 +91,20 @@ input 1 : Red jacket, blue trouser, yellow hat,
 ![Screenshot 2024-06-17 at 8 23 33 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/7e7167c1-7a46-4484-a0d0-58231cb79ee0)
 
 Now I will link all to a prompt in prompt injection. The prompt is the one in front of Paris champ de mars, an elegant woman colourful, in 1950 style
-This prompt changes the second image, but the prompt was not applied. 
+This prompt changes the second image, but the prompt was not applied. The prompt will be applied if we unlink input 8 but the result will be different when we use the prompt as usual.
 
 ![Screenshot 2024-06-17 at 8 42 13 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/4e6cf9d0-8249-47fe-a7a5-574f26500d34)
 
+If we now change the Lcm sampler for dpmpp_2m, the result is different. The second image is the metamorphosis of the reference image and the third image is the final transformation. 
+
+![Screenshot 2024-06-17 at 9 25 10 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/fd6106ab-def8-4c7a-9c4c-4ecc424b042c)
+
+using output 0 or output 1 don't need to link input 8. 
 
 
 
-The question is: is there a relationship between the reference image and the final image, or is it a glitch ?  
+
+The question is: is there a relationship between the reference image and the final image, or is it a glitch ? Is the reference image an AI image or an existing image that was used to train the AI? 
 
 ![ref-image](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/95a46605-c62c-48c0-8a22-9c1c89a8a604)
 
