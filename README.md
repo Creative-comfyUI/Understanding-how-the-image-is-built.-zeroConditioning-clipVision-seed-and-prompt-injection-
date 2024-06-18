@@ -113,7 +113,7 @@ without injection all and dpmmp_sde sampler instead Lcm
 
 ![Screenshot 2024-06-17 at 10 42 38 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/9b9b2a50-f151-4754-bd94-7d01b1fefd7f)
 
-Prompt injection bring precision and detail to the image. Adding input 8 blocked a part of the original prompt 
+Prompt injection bring precision and detail to the image. Adding input 8 blocked a part of the original prompt (third image)
 
 ![Screenshot 2024-06-17 at 11 03 25 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/1080f954-1d40-4ac1-93d0-afc7f2ef3c56)
 
