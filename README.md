@@ -62,11 +62,11 @@ Before continuing the explanation, we can conclude that Euler samplers always gi
 
 Now we are going to use prompt injection as it can change many things in the result of the image. 
 
-Adding an empty prompt to output 8 add variation to image 2 and 3. 3 has much more variation. Image 1 didn't change 
+Adding an empty prompt to input 8 add variation to image 2 and 3. 3 has much more variation. Image 1 didn't change 
 
 ![Screenshot 2024-06-16 at 8 30 33 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/898e50ab-2f50-4c7b-8a49-c40a75c0e8fa)
 
-Now I will go to the muted prompt and write the prompt in the one that links to output 8 
+Now I will go to the muted prompt and write the prompt in the one that links to input 8 
 
 ![Screenshot 2024-06-16 at 10 58 17 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/13363592-3f64-4a93-897d-0efebea52597)
 
@@ -166,7 +166,7 @@ This model as you can see in the previous repository seems to act differently. U
 
 For the same seed, with the same model, the reference image will always be the same. Using clip vision with this model and image done with another model will give the same reference image but with variation. The sampler can influence the reference image Euler, LCM dpmmpp_.... or dpmpp_sde can have different references. 
 
-Prompt injection can help us to add some detail more precisely wiht output 8. output 8 can in some case as seen with my previous repisotery on prompt injection help us to have variation of image reference and can give interesting result. In this case the choice of model is very important. Not all models react in the same way.
+Prompt injection can help us to add some detail more precisely wiht input 8. input 8 can in some case as seen with my previous repisotery on prompt injection help us to have variation of image reference and can give interesting result. In this case the choice of model is very important. Not all models react in the same way.
 
 How is this reference used, how does it affect the result? Why is the effect important for some models and not for others?  If instead a model in Ksampler we can choose an image that will act differently at the one add in the latent, might be a good idea to see what happens?
 
