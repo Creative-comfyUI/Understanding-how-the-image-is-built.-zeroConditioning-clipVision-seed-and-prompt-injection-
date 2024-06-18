@@ -114,7 +114,42 @@ The question is: is there a relationship between the reference image and the fin
 
 There is a relationship between the reference image with the seed for sure. That means there is a relationship also with the image we will create especially with the first image 
 
-Now let use clip vision to confirm or not this relationship. Clipvision let us used an image as prompt. Using this technic can help us to mix two images and create a new one. Let try and see what happend. We are going one of the image we used with the same seed. 
+Now let use clip vision to confirm or not this relationship. Clipvision let us used an image as prompt. Using this technic can help us to mix two images and create a new one. Let try and see what happend. It is important to understand that it looks like the model we used seems to affect the result. Some models seem to be more accurate than others. Why is another question? 
+
+Let us look at some examples.
+
+<h3> Model DreamShaperXL Turbo </h3> 
+
+Regular image with prompt 
+
+![RenduDreamShaper](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/99279efb-0228-46f0-8f56-ad254594bce7)
+
+Image with muted prompt (zeroconditionning) 
+
+![Dream_muted](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/ecb0eaa1-a5d0-4e9d-93bd-84f52706ca8c)
+
+
+Image using clip vision zeroconditionning 
+
+Strength 0 
+
+![ClipVisionDreamShapter](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/e6798b1f-609b-4f00-ba46-0502ff2f4ee9)
+
+Strength 1 
+
+![Clipvision1_dreamShaper](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/387ead0d-afc7-4ac5-b74c-4870e0795bb9)
+
+For strength 1, I wonder where this picture came from. It looks like a variation of the first image. Playing with the strength is not a variation between strength 0 and 1, it looks like a variation of strength 1. 
+
+Now we are going to use another model and show something much more accurate.  
+
+<h3>Model </h3>
+
+
+
+
+
+
 
 
 
