@@ -141,7 +141,15 @@ Strength 1
 
 For strength 1, I wonder where this picture came from. It looks like a variation of the first image. Playing with the strength is not a variation between strength 0 and 1, it looks like a variation of strength 1. 
 
-Now we are going to use another model and show something much more accurate.  
+What happens if we vary the seed?
+
+The new seed will give a new reference image for strength 0 and strength 1, meaning the image doesn't contain the image reference. The reference is linked to the seed. 
+
+Euler seems to play of different role thant other sampler 
+
+
+
+Now we are going to use another model, which seems to be different and maybe more accurate.  
 
 <h3>Model </h3>
 
