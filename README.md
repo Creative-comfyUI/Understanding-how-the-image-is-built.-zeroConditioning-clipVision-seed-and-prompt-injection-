@@ -83,6 +83,19 @@ input 7  and input 8 with blank prompt change much more face expression of the t
 
 ![visage2](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/ef3d2c02-52a1-4c18-bd99-1f14b8f6f460)
 
+Now we are going to use prompt with input 0 and input 1 
+
+input 0 : woman smiling and dancing with hands up
+input 1 : Red jacket, blue trouser, yellow hat, 
+
+![Screenshot 2024-06-17 at 8 23 33 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/7e7167c1-7a46-4484-a0d0-58231cb79ee0)
+
+Now I will link all to a prompt in prompt injection. The prompt is the one in front of Paris champ de mars, an elegant woman colourful, in 1950 style
+This prompt changes the second image, but the prompt was not applied. 
+
+![Screenshot 2024-06-17 at 8 42 13 PM](https://github.com/Creative-comfyUI/Understanding-how-the-image-is-built.-zeroConditioning-clipVision-seed-and-prompt-injection-/assets/166729777/4e6cf9d0-8249-47fe-a7a5-574f26500d34)
+
+
 
 
 The question is: is there a relationship between the reference image and the final image, or is it a glitch ?  
